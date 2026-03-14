@@ -2,9 +2,7 @@ A single-page, one-column resume for software developers. It uses the base latex
 
 ### Motivation
 
-I created this template as managing a resume on Google Docs was hard and changing any formatting was too difficult since it had to be applied in multiple places.
-
-Most currently available templates either focus on two columns, or are multiple pages long that didn't work well for career fairs or online applications.
+Forked Resume Repository using docker image to keep up to date resume on github repo for easy distributed access.
 
 ### Quick start
 
@@ -14,13 +12,13 @@ Get started quickly using [Overleaf](https://www.overleaf.com/latex/templates/so
 
 ```sh
 docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex sourabh_bajaj_resume.tex
+docker run --rm -i -v "$PWD":/data latex pdflatex john_lunz_resume.tex
 ```
 
 ### Preview
 
-![Resume Screenshot](/resume_preview.png)
+![Resume Screenshot](/john_lunz_resume.png)
 
 ### License
 
-Format is MIT but all the data is owned by Sourabh Bajaj.
+Format is MIT.
