@@ -1,0 +1,200 @@
+%-------------------------
+% Resume in LateX
+% Author : John Lunz
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemPlain}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\href{https://www.linkedin.com/in/john-lunz/}{\Large John Lunz}} & Email: \href{mailto:johnlunz8@gmail.com}{johnlunz8@gmail.com}\\
+  \href{https://www.linkedin.com/in/john-lunz/}{LinkedIn - https://www.linkedin.com/in/john-lunz/} & Mobile: \href{tel:+15165228666}{+1-516-522-8666} \\
+  \href{https://github.com/angrycolt84}{GitHub - https://github.com/angrycolt84}
+\end{tabular*}
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {KKR}{Boston, MA}
+      {Assistant Vice President, Backend Technology}{Dec 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Project Ownership}
+          {Responsible for building new functionality and maintaining multiple mission critical modules across multiple languages and infrastructures for middle office operations.}
+        \resumeItem{Integration}
+          {Closely collobarated with multiple teams to integrate live application suite across multiple organizations including new security standards and AWS infrastructure impacting hundreds of users.}
+        \resumeItem{Deployment}
+          {Responsible for code reviewing junior engineers and deploying application suite worked on by 20+ developers using ServiceNow Change Management for production releases.}
+        \resumeItem{AI Driven Development}
+          {Utilized Claude Code to create multiple sub-agents to develop a new document generation application with React/Vite JS Front End and Python FastAPI backend.}
+      \resumeItemListEnd
+% --------Multiple Positions Heading------------
+   \resumeSubSubheading
+    {Backend Engineer III}{May 2025 -- Dec 2025}
+    \resumeItemListStart
+       \resumeItem{AI Driven ETL Middleware}
+         {Built crucial confirmation middleware utilizing multiple AI and ML Models to convert PDF documentation into CSV files to then be ingested into Postgres database.}
+       \resumeItem{Docusign Integration}
+         {Created integration software with Docusign to batch submit many documents to then be docusigned replacing vendor software saving the firm thousands of dollars per month in software fees.}
+       \resumeItem{Legacy Code Optimization}
+         {Optimized legacy Bloomberg API to support runtime polymorphism and a configuration-driven approach saving ten hours in manual processing per month.}
+    \resumeItemListEnd
+
+%-------------------------------------------
+
+    \resumeSubheading
+      {Global Atlantic}{Brighton, MA}
+      {Backend Engineer II}{Dec 2023 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Pipeline Optimization}
+          {Optimized crucial data pipeline, combining stored procedures and custom UDFs with Python-based automation scripts improving processing speed by 95 percent.}
+        \resumeItem{CI/CD}
+          {Architected and maintained a lightweight CI/CD automation layer, leveraging git hooks, shell scripts, and automated test triggers to streamline code validation and deployment processes across environments.}
+        \resumeItem{Transaction Automation}
+          {Engineered an automated data pipeline using Pandas, Redshift Data Lake, and OAuth2 authenticated API microservices to gather, normalize, and stream high volume cash transaction data.}
+        \resumeItem{Data Integrity}
+          {Validated High Volume Cash Transaction Data to ensure data integrity at all pipeline steps for ten thousand plus transactions per month totalling well over two million dollars.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {FDM Group}{Boston, MA}
+      {Backend Engineer}{Nov 2021 -- Dec 2023}
+      \resumeItemListStart
+        \resumeItem{Date Pipeline}
+          {Built data ingestion pipeline with Python to process 10,000+ events per week in XML, JSON, and additional legacy formats replacing previously manual ingestion.}
+        \resumeItem{SDLC}
+          {Worked with end users to gather requirements, build minimum viable product, demo, and iterate in an agile manner.}
+        \resumeItem{Middleware}
+          {Improved vendor data processing by building middleware microservice to optimize heartbeat API connectivity necessary for millions of dollars of settled trades.}
+        \resumeItem{Support}
+          {Collobarated with Production Support and internal team members to efficiently address, debug, and fix production issues as part of regular on-call rotation.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+%\section{Projects}
+%  \resumeSubHeadingListStart
+%  \resumeSubItem{QuantSoftware Toolkit}
+ %     {Open source Python library for financial data analysis and machine learning for finance.}
+  %  \resumeSubItem{GitHub Visualization}
+   %   {Data visualization of Git log data using D3 to analyze project trends over time.}
+%    \resumeSubItem{Recommendation System}
+%      {Music and movie recommender systems using collaborative filtering on public datasets.}
+%    \resumeSubItem{Mac Setup}
+%      {Book that gives step-by-step instructions on setting up developer environment on macOS.}
+%  \resumeSubHeadingListEnd
+
+%
+%--------SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{\textbf{Languages}{: Python, Mendix, SQL}}
+    \item{\textbf{Technologies}{: AWS, Claude Code, FastAPI}}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fordham University}{Bronx, NY }
+      {Bachelor of Science in Finance, Information Technology; GPA: 3.81}{Aug 2016 -- May 2020}
+  \resumeSubHeadingListEnd
+
+\end{document}
